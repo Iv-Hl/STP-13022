@@ -1,1 +1,2 @@
-import './js/burgerMenu';
+import './styles/main.css';
+import './js/burgerMenu.js';

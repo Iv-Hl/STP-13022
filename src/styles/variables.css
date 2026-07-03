@@ -1,0 +1,13 @@
+:root {
+  --color-text: #3D2612;
+  --color-background: #F7C59F;
+  --color-orange: #FF6B35;
+  --color-light-yellow: #FFF5C0;
+  --color-green: #4E9F39;
+  --color-gold: #FFB800;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --font-title: "Lilita One", sans-serif;
+  --font-body: "Poppins", sans-serif;
+}
