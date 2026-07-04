@@ -1,0 +1,69 @@
+<section class="about section" id="about">
+  <div class="container">
+    <h2 class="about-title">About the Game</h2>
+    <p class="about-subtitle">Fast-paced cooking that'll test your multitasking skills</p>
+
+    <div class="about-content">
+      <button
+        type="button"
+        class="btn btn--outline about-read-more"
+        data-about-open
+        aria-haspopup="dialog"
+        aria-expanded="false"
+        aria-controls="about-modal"
+      >
+        Read More
+      </button>
+
+      <div
+        class="about-card"
+        id="about-modal"
+        aria-label="About the Game"
+        data-about-modal
+        data-about-state="closed"
+        hidden
+      >
+        <p class="about-text">
+          So basically, Cooking Tour throws you into these crazy busy kitchens where you're scrambling to cook meals and upgrade your equipment while everything gets more hectic.
+          Each level throws new recipes at you, plus the customers get pickier, but watching everything come together on screen is really satisfying.
+          It's one of those games that's super easy to learn but then you find yourself playing way longer than you planned - great for killing time but with enough unlocks to keep you hooked.
+          We want it to feel energetic and fun - like you're actually in a bustling kitchen.
+        </p>
+
+        <button
+          type="button"
+          class="about-card-close"
+          data-about-close
+          aria-label="Close"
+        >
+          <svg class="about-modal-close-icon" aria-hidden="true">
+            <use href="./img/icons/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+      <picture class="about-media">
+        <source media="(min-width: 1024px)" srcset="./img/how-about-desktop.png" />
+        <img
+          class="about-image"
+          src="./img/how-about-mobile.png"
+          width="690"
+          height="455"
+          alt="Busy Cooking Tour kitchen gameplay"
+        />
+      </picture>
+
+      <a
+        class="btn btn--outline about-google-play"
+        href="https://play.google.com/store/apps/details?id=com.food.cooking.games.restaurant"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="google-play-button-icon" aria-hidden="true">
+          <use href="./img/icons/sprite.svg#GooglePlay"></use>
+        </svg>
+        Google Play
+      </a>
+    </div>
+  </div>
+</section>
