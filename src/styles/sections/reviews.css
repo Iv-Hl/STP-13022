@@ -1,0 +1,198 @@
+.reviews-section {
+  width: 100%;
+  max-width: 1440px;
+  min-height: 720px;
+  margin: 0 auto;
+  padding: 60px 20px;
+
+  background-image: url('../../img/Reviews.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.reviews-title {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 80px;
+  color: #3d2612;
+  margin: 0 0 8px 0;
+}
+
+.reviews-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #3d2612;
+  font-weight: 500;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.reviews-content-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.reviews-list {
+  width: 100%;
+  max-width: 540px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.review-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #fff5c0;
+  border: 2px solid #ff6b35;
+  border-radius: 20px;
+  padding: 12px 24px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  width: fit-content;
+}
+
+.review-item:hover {
+  transform: translateY(-2px);
+}
+.review-item:nth-child(1),
+.review-item:nth-child(2) {
+  width: 652px;
+  height: 108px;
+  align-self: flex-start;
+}
+
+.review-item:nth-child(3),
+.review-item:nth-child(4),
+.review-item:nth-child(5) {
+  width: 440px;
+  align-self: center;
+}
+
+.review-avatar {
+  flex-shrink: 0;
+  border-radius: 40%;
+  overflow: hidden;
+  background-color: #ddd;
+}
+
+.review-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-info {
+  flex-grow: 1;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.review-author {
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #3d2612;
+  margin: 0;
+}
+
+.review-rating {
+  color: #ffb800;
+  -webkit-text-stroke: 1px #ff6b35;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.review-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #3d2612;
+  margin: 0;
+}
+
+/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ --- */
+@media (max-width: 768px) {
+  /* Контейнер списку відгуків */
+  .reviews-section {
+    background-image: none;
+    padding: 0;
+  }
+  .reviews-list {
+    max-width: 100%;
+    padding: 0 16px;
+    gap: 12px;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .review-item:nth-child(1),
+  .review-item:nth-child(2),
+  .review-item:nth-child(3),
+  .review-item:nth-child(4),
+  .review-item:nth-child(5) {
+    width: 100%;
+    max-width: 343px;
+    height: auto;
+    align-self: center;
+    padding: 16px;
+
+    align-items: center;
+    gap: 8px;
+  }
+
+  .review-header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+    width: 100%;
+  }
+
+  .review-content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .review-avatar {
+    width: 36px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+  .review-author {
+    font-size: 14px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+    overflow: visible;
+  }
+}

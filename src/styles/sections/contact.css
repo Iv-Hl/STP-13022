@@ -1,0 +1,158 @@
+.contact-section {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 100px 20px 320px 20px;
+  background-color: #fbc299;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-title {
+  font-family: 'Lilita One', sans-serif;
+  font-size: 80px;
+  color: #3d2612;
+  margin: 0;
+  text-align: center;
+
+  display: table;
+  margin: 0 auto;
+  position: relative;
+}
+
+.contact-image-box {
+  position: absolute;
+  width: 320px;
+
+  top: 0;
+  right: 50%;
+  margin-right: calc(23px + 40px);
+}
+
+.contact-chef-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-info-card {
+  position: absolute;
+  background-color: #fff5c0;
+  border: 2px solid #ff6b35;
+  border-radius: 20px;
+  padding: 24px 32px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+  padding: 16px 16px 33px 16px;
+
+  top: calc(100% + 32px);
+  left: 50%;
+  margin-left: 135px;
+}
+
+.contact-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #3d2612;
+  margin: 0;
+}
+
+.contact-email-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.email-icon {
+  font-size: 24px;
+  color: #4caf50;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.email-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.email-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+}
+/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 40px 16px;
+    background-color: #fbc299;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .contact-title {
+    font-size: 40px;
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact-image-box {
+    display: none;
+  }
+
+  .contact-info-card {
+    position: static;
+    width: 100%;
+    max-width: 343px;
+    margin: 0 auto;
+    padding: 24px 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-text {
+    font-size: 16px;
+    font-weight: normal;
+  }
+
+  .contact-email-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    width: 100%;
+  }
+
+  .email-label,
+  .email-link {
+    font-size: 16px;
+    font-weight: normal;
+  }
+}

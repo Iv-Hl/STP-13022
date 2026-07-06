@@ -1,0 +1,112 @@
+.footer {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #fbc299;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  border-top: 1px solid #ff6b35;
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+  padding: 0 40px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3d2612;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  opacity: 0.9;
+}
+
+.footer-copyright {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #3d2612;
+  margin: 0;
+
+  margin-left: 137px;
+  white-space: nowrap;
+}
+/* --- МЕДІА-ЗАПИТ ДЛЯ ФУТЕРА (МОБІЛЬНІ ПРИСТРОЇ) --- */
+@media (max-width: 768px) {
+  .footer {
+    border-top: 1px solid #ff6b35;
+    padding: 12px 16px;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 343px;
+    margin: 0 auto;
+  }
+
+  .footer-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .footer-item {
+    display: inline-block;
+  }
+
+  .footer-link {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #3d2612;
+    text-decoration: none;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+
+  /* Текст копірайту (p) */
+  .footer-copyright {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #3d2612;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
