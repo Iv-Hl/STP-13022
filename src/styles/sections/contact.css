@@ -89,14 +89,6 @@
   margin: 0;
 }
 
-.email-link {
-  color: #000000;
-  text-decoration: none;
-}
-
-.email-link:hover {
-  text-decoration: underline;
-}
 /* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
 @media (max-width: 768px) {
   .contact-section {

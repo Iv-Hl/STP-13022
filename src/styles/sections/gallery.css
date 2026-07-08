@@ -16,9 +16,7 @@
   list-style: none;
   padding: 0;
   margin: 0 auto;
-
-  max-width: 1200px;
-
+  max-width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -27,7 +25,6 @@
 
 .gallery-item {
   margin: 0;
-
   flex: 0 1 calc((100% - 64px) / 2);
   max-width: 568px;
 }
@@ -45,4 +42,16 @@
   display: block;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
+@media (max-width: 768px) {
+  .swiper-wrapper {
+    padding-bottom: 24px;
+  }
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+  }
 }
