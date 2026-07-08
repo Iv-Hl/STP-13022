@@ -1,5 +1,5 @@
-.container {
-  padding: 64px 120px;
+.swiper {
+  width: 362px;
 }
 
 .gallery-title {
@@ -13,45 +13,68 @@
 }
 
 .gallery-list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 64px;
+  width: 362px;
 }
 
-.gallery-item {
-  margin: 0;
-  flex: 0 1 calc((100% - 64px) / 2);
-  max-width: 568px;
-}
-
-.gallery-item:nth-child(3) {
-  flex: 0 1 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  max-width: 568px;
-  display: block;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
-@media (max-width: 768px) {
-  .swiper-wrapper {
-    padding-bottom: 24px;
+@media only screen and (min-width: 1440px) {
+  .gallery {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
-  .swiper-slide img {
+
+  .gallery .container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .gallery-list {
+    /* list-style: none; */
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 64px;
+  }
+
+  .gallery-item {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    flex: 0 1 calc((100% - 64px) / 2);
+    width: 568px;
+  }
+
+  .gallery-item:nth-child(3) {
+    flex: 0 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gallery-item:nth-child(1),
+  .gallery-item:nth-child(4) {
+    display: flex;
+    justify-content: end;
+  }
+
+  .gallery-item:nth-child(2),
+  .gallery-item:nth-child(5) {
+    display: flex;
+    justify-content: start;
+  }
+
+  .gallery-item img {
     width: 100%;
     height: auto;
+    max-width: 568px;
     display: block;
-    border-radius: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .swiper {
+    width: 100%;
   }
 }
