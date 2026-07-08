@@ -1,6 +1,5 @@
 .reviews-section {
   width: 100%;
-  max-width: 1440px;
   min-height: 720px;
   margin: 0 auto;
   padding: 60px 20px;
@@ -45,6 +44,7 @@
   max-width: 1200px;
   display: flex;
   justify-content: flex-end;
+  margin-right: 85px;
 }
 
 .reviews-list {

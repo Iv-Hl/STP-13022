@@ -1,0 +1,52 @@
+.conteiner-legal {
+  padding: 16px;
+}
+.back-home-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 41px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.arrow-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.back-home-title {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.back-home-link:hover .arrow-circle {
+  background-color: #d4d4d4;
+}
+.legal-title {
+  font-family: 'Lilita One';
+  font-size: 80px;
+  margin-bottom: 16px;
+}
+.text {
+  font-size: 12px;
+  margin-bottom: 32px;
+}
+.paragraph {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+@media only screen and (min-width: 1440px) {
+  .conteiner-legal {
+    padding: 64px 120px;
+  }
+}
