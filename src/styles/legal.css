@@ -21,9 +21,11 @@
 }
 
 .back-home-title {
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 24px;
   font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
   margin: 0;
 }
 
@@ -32,21 +34,42 @@
 }
 .legal-title {
   font-family: 'Lilita One';
-  font-size: 80px;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 0;
   margin-bottom: 16px;
+}
+.conteiner-legal p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
 }
 .text {
   font-size: 12px;
   margin-bottom: 32px;
 }
 .paragraph {
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1;
+  letter-spacing: 0;
   margin-bottom: 16px;
 }
 @media only screen and (min-width: 1440px) {
   .conteiner-legal {
     padding: 64px 120px;
+  }
+  .back-home-title {
+    font-family: sans-serif;
+  }
+  .legal-title {
+    font-size: 80px;
+  }
+  .paragraph {
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  .conteiner-legal p.text {
+    font-size: 12px;
   }
 }

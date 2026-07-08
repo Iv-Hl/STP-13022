@@ -52,7 +52,7 @@
   white-space: nowrap;
 }
 /* --- МЕДІА-ЗАПИТ ДЛЯ ФУТЕРА (МОБІЛЬНІ ПРИСТРОЇ) --- */
-@media (max-width: 768px) {
+@media only screen and (max-width: 1439.99px) {
   .footer {
     border-top: 1px solid #ff6b35;
     padding: 12px 16px;

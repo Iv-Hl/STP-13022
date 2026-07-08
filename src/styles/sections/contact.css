@@ -89,8 +89,8 @@
   margin: 0;
 }
 
-/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
-@media (max-width: 768px) {
+/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 1439.99px) --- */
+@media only screen and (max-width: 1439.99px) {
   .contact-section {
     padding: 40px 16px;
     background-color: #fbc299;
