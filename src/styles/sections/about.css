@@ -1,0 +1,219 @@
+.about {
+  padding-block: 24px;
+  background-color: var(--color-background);
+  scroll-margin-top: 45px;
+}
+
+.about .container {
+  padding-inline: 6px;
+}
+
+.about-title {
+  max-width: 363px;
+  margin-inline: auto;
+  font-family: var(--font-title);
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.about-subtitle {
+  max-width: 324px;
+  margin: 16px auto 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.about-read-more {
+  width: 343px;
+  height: 44px;
+  padding: 10px 16px;
+  gap: 10px;
+  border: 1px solid var(--color-orange);
+  border-radius: 12px;
+  color: var(--color-text);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.about-media {
+  display: block;
+  width: 343px;
+}
+
+.about-image {
+  width: 343px;
+  height: 425px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.about-google-play {
+  width: 343px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid var(--color-orange);
+  border-radius: 20px;
+  color: var(--color-text);
+}
+
+/* Read More panel (mobile modal) */
+
+.about-card {
+  position: fixed;
+  z-index: 300;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 375px;
+  height: 538px;
+  padding: 24px 16px;
+  overflow-y: auto;
+  background-color: var(--color-light-yellow);
+  border: 1px solid var(--color-orange);
+  border-radius: 20px;
+}
+
+.about-card[hidden] {
+  display: none;
+}
+
+.about-text {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.about-card-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width: 96px;
+  height: 40px;
+  margin-top: 16px;
+  padding: 8px;
+  border: 1px solid var(--color-orange);
+  border-radius: 10px;
+  background-color: transparent;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text);
+}
+
+.about-modal-close-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  color: var(--color-orange);
+}
+
+@media only screen and (min-width: 1440px) {
+  .about {
+    padding-block: 64px;
+    scroll-margin-top: 112px;
+  }
+
+  .about .container {
+    padding-inline: 119px;
+  }
+
+  .about-title {
+    max-width: 652px;
+    font-size: 80px;
+    line-height: 1;
+  }
+
+  .about-subtitle {
+    max-width: 703px;
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--color-black);
+  }
+
+  .about-content {
+    display: grid;
+    grid-template-columns: 488px 690px;
+    grid-template-areas:
+      'card  media'
+      'gplay media';
+    column-gap: 24px;
+    row-gap: 33px;
+    align-items: start;
+    justify-content: center;
+    max-width: 1202px;
+    margin-inline: auto;
+    margin-top: 32px;
+  }
+
+  .about-read-more {
+    display: none;
+  }
+
+  /* Text card shows on desktop, never as a modal */
+  .about-card,
+  .about-card[hidden] {
+    display: block;
+    position: static;
+    z-index: auto;
+    grid-area: card;
+    transform: none;
+    width: auto;
+    height: 376px;
+    max-height: none;
+    padding: 32px 40px;
+    overflow: visible;
+  }
+
+  .about-card-close {
+    display: none;
+  }
+
+  .about-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  .about-media {
+    grid-area: media;
+    width: 690px;
+  }
+
+  .about-image {
+    width: 690px;
+    height: 455px;
+  }
+
+  .about-google-play {
+    grid-area: gplay;
+    width: 220px;
+    height: 46px;
+    padding: 8px 10px;
+    gap: 8px;
+    justify-self: start;
+  }
+}

@@ -1,0 +1,234 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 32px;
+  border: none;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  text-align: center;
+  transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  opacity: 0.85;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 2px solid var(--color-orange);
+  color: var(--color-orange);
+  padding: 11px 28px;
+}
+
+.btn--outline:hover,
+.btn--outline:focus-visible {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+  opacity: 1;
+}
+
+/* Google Play button (light pill with orange border) */
+
+.btn-play {
+  width: 220px;
+  height: 46px;
+  padding: 8px 10px;
+  background-color: transparent;
+  border: 1px solid var(--color-orange);
+  border-radius: 20px;
+  color: var(--color-text);
+}
+
+/* Header */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--color-background);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 45px;
+}
+
+.site-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.site-logo-icon {
+  display: block;
+  width: 82px;
+  height: 45px;
+}
+
+.google-play-button-icon {
+  display: block;
+  width: 32px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.nav-list {
+  display: none;
+  align-items: center;
+  gap: 64px;
+}
+
+.nav-link {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  color: var(--color-text);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  color: var(--color-orange);
+}
+
+.nav-cta {
+  display: none;
+}
+
+.burger-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--color-orange);
+}
+
+.burger-button-icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Burger menu (mobile panel) */
+
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  width: min(375px, 100vw);
+  height: 578px;
+  max-height: 100dvh;
+  padding: 16px;
+  background: rgba(255, 107, 53, 0.2);
+  backdrop-filter: blur(24px);
+  overflow-y: auto;
+}
+
+.burger-menu[hidden] {
+  display: none;
+}
+
+.burger-menu-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 77px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--color-orange);
+}
+
+.burger-menu .nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: 151px;
+  margin-top: 16px;
+}
+
+.burger-menu .nav-link {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: var(--color-text);
+}
+
+.burger-menu > .btn {
+  margin-top: 32px;
+}
+
+.btn-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  color: var(--color-orange);
+}
+
+.mobile-menu-close-icon {
+  width: 24px;
+  height: 24px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    position: fixed;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1440px;
+    max-width: 1440px;
+    z-index: 1000;
+    border: 1px solid var(--color-orange);
+    background-color: rgba(255, 107, 53, 0.2);
+    backdrop-filter: blur(16px);
+  }
+  .header .container {
+    padding: 16px 120px;
+  }
+
+  .nav {
+    height: 46px;
+    gap: 64px;
+  }
+
+  .nav-list {
+    display: flex;
+    gap: 48px;
+  }
+
+  .nav-cta {
+    display: block;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+}
