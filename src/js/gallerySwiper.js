@@ -5,6 +5,7 @@ import 'swiper/css';
 const swiper = new Swiper('#swiper', {
   direction: 'horizontal',
   loop: false,
+  slidesPerView: 1.1,
 });
 
 const resizeHandler = () => {
