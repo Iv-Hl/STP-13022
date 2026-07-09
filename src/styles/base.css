@@ -58,3 +58,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* scroll-margin-top */
+#about,
+#how-to-play,
+#gallery,
+#reviews,
+#contact {
+  scroll-margin-top: 40px;
+}
+
+@media only screen and (min-width: 1440px) {
+  #about,
+  #how-to-play,
+  #gallery,
+  #reviews,
+  #contact {
+    scroll-margin-top: 60px;
+  }
+}

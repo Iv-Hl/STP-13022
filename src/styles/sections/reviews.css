@@ -135,11 +135,15 @@
 }
 
 /* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ --- */
-@media (max-width: 768px) {
+@media only screen and (max-width: 1439.99px) {
   /* Контейнер списку відгуків */
   .reviews-section {
     background-image: none;
     padding: 0;
+  }
+  .reviews-content-wrapper {
+    margin-right: 0;
+    justify-content: center;
   }
   .reviews-list {
     max-width: 100%;
@@ -177,6 +181,7 @@
     align-items: flex-start;
     gap: 12px;
     width: 100%;
+    margin-right: 0;
   }
 
   .review-avatar {

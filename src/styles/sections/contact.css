@@ -47,7 +47,6 @@
   border: 2px solid #ff6b35;
   border-radius: 20px;
   padding: 24px 32px;
-  width: 100%;
   max-width: 440px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
@@ -79,6 +78,8 @@
   line-height: 1;
   display: inline-flex;
   align-items: center;
+  width: 24px;
+  height: 24px;
 }
 
 .email-label {
@@ -89,8 +90,8 @@
   margin: 0;
 }
 
-/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 768px) --- */
-@media (max-width: 768px) {
+/* --- МЕДІА-ЗАПИТ ДЛЯ МОБІЛЬНИХ ПРИСТРОЇВ (до 1439.99px) --- */
+@media only screen and (max-width: 1439.99px) {
   .contact-section {
     padding: 40px 16px;
     background-color: #fbc299;
