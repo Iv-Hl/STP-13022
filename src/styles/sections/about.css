@@ -71,6 +71,7 @@
   border: 1px solid var(--color-orange);
   border-radius: 20px;
   color: var(--color-text);
+  white-space: nowrap;
 }
 
 /* Read More panel (mobile modal) */
