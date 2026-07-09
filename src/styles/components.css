@@ -12,7 +12,10 @@
   color: var(--color-white);
   background-color: var(--color-orange);
   text-align: center;
-  transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 
 .btn:hover,
